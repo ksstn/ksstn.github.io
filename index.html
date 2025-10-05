@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Audiowide Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .ksstn-title {
+            position: fixed;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Audiowide', sans-serif;
+            font-size: 14vw;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            margin: 0;
+            pointer-events: none;
+            user-select: none;
+            z-index: 2;
+            text-shadow: 4px 4px 24px #000, 0 2px 8px #222;
+        }
+
+        .person-foreground {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90vw;
+            height: 119vh;
+            object-fit: cover;
+            z-index: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        /* Responsive info positions relative to KSSTN */
+        .ksstn-info {
+            position: fixed;
+            top: calc(56% + 5.5vw);
+            left: calc(50% - 26.7vw);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4vw;
+            color: #fff;
+            z-index: 3;
+            white-space: nowrap;
+        }
+
+        .ksstn-info-right {
+            position: fixed;
+            top: calc(56% + 5.5vw);
+            left: calc(50% + 16.5vw);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4vw;
+            color: #fff;
+            z-index: 3;
+            line-height: 1.1;
+            white-space: nowrap;
+        }
+
+        .ksstn-info-right span {
+            display: block;
+        }
+
+        .ksstn-info-location {
+            position: fixed;
+            top: calc(56% + 5.5vw);
+            left: calc(50% + 25vw);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4vw;
+            color: #fff;
+            z-index: 3;
+            line-height: 1.1;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 900px) {
+            .ksstn-title {
+                font-size: 18vw;
+            }
+
+            .ksstn-info,
+            .ksstn-info-right,
+            .ksstn-info-location {
+                font-size: 2.5vw;
+                top: calc(56% + 10vw);
+            }
+
+            .ksstn-info {
+                left: calc(50% - 38vw);
+            }
+
+            .ksstn-info-right {
+                left: calc(50% + 10vw);
+            }
+
+            .ksstn-info-location {
+                left: calc(50% + 23vw);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .ksstn-title {
+                font-size: 16vw;
+            }
+
+            .ksstn-info,
+            .ksstn-info-right,
+            .ksstn-info-location {
+                font-size: 3vw;
+                top: calc(56% + 10vw);
+            }
+
+            .ksstn-info {
+                left: calc(50% - 30vw);
+            }
+
+            .ksstn-info-right {
+                left: calc(50% + 10vw);
+            }
+
+            .ksstn-info-location {
+                left: calc(50% + 23vw);
+            }
+        }
+
+        .navbar .navbar-nav .nav-link,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar .navbar-nav .nav-link.active {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .navbar .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .navbar .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .logo-container img {
+            height: 49px;
+            width: 49px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Foreground Person Image -->
+    <img src="picture.png" alt="Person Foreground" class="person-foreground">
+
+    <!-- Responsive Navbar with Logo and Portfolio Links -->
+    <nav class="navbar navbar-expand-lg" style="background: transparent;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="logo-container me-2">
+                    <img src="logo.png" alt="Logo">
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- KSSTN Title -->
+    <div class="ksstn-title">
+        KSSTN
+    </div>
+
+    <!-- Info Texts -->
+    <div class="ksstn-info">
+        Portfolio
+    </div>
+    <div class="ksstn-info-right">
+        <span>creator</span>
+        <span>creator</span>
+    </div>
+    <div class="ksstn-info-location">
+        Malvar<br>Philippines
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
