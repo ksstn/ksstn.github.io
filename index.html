@@ -89,7 +89,34 @@
             line-height: 1.1;
             white-space: nowrap;
         }
+        
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
 
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ff8c8c !important;
+}
         @media (max-width: 900px) {
             .ksstn-title {
                 font-size: 18vw;
@@ -140,48 +167,7 @@
             }
         }
 
-        .navbar .navbar-nav .nav-link,
-        .navbar .navbar-brand {
-            color: #fff !important;
-        }
-
-        .navbar .navbar-nav .nav-link.active {
-            color: #fff !important;
-            font-weight: 500;
-        }
-
-        .navbar .navbar-toggler {
-            border-color: #fff;
-        }
-
-        .navbar .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        }
-
-        nav.navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            z-index: 30;
-            /* Ensure navbar is in front of all content */
-            background: transparent !important;
-            box-shadow: none;
-            pointer-events: auto;
-        }
-
-        .logo-container img {
-            height: 49px;
-            width: 49px;
-            border-radius: 8px;
-            z-index: 31;
-            position: relative;
-        }
-
-        .navbar-toggler {
-            z-index: 31;
-            position: relative;
-        }
+       
 
         .ksstn-shine {
             background: linear-gradient(120deg, #fff 30%, #9c030398 50%, #fff 70%);
@@ -210,46 +196,35 @@
     <!-- Foreground Person Image -->
     <img src="picture.png" alt="Person Foreground" class="person-foreground">
 
-    <!-- Responsive Navbar with Logo and Portfolio Links -->
-    <nav class="navbar navbar-expand-lg" style="background: transparent;">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <span class="logo-container me-2">
-                    <img src="logo.png" alt="Logo">
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="logo.png" alt="Logo">
+      <span class="fw-bold text-white">KSSTN</span>
+    </a>
+
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- KSSTN Title -->
     <div class="ksstn-title">
         KSSTN
     </div>
 
-    <!-- Info Texts -->
     <div class="ksstn-info">
         Designer
     </div>
@@ -264,5 +239,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
