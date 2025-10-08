@@ -15,6 +15,10 @@
             background-size: cover;
             margin: 0;
             min-height: 100vh;
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, filter 1s ease-out, transform 1s ease-out;
         }
 
         .ksstn-title {
@@ -74,7 +78,7 @@
             display: block;
         }
 
-        .ksstn-info-location {
+        .ksstn-info-web {
             position: fixed;
             top: calc(56% + 5.5vw);
             left: calc(50% + 25vw);
@@ -93,7 +97,7 @@
 
             .ksstn-info,
             .ksstn-info-right,
-            .ksstn-info-location {
+            .ksstn-info-web {
                 font-size: 2.5vw;
                 top: calc(56% + 10vw);
             }
@@ -106,7 +110,7 @@
                 left: calc(50% + 10vw);
             }
 
-            .ksstn-info-location {
+            .ksstn-info-web {
                 left: calc(50% + 23vw);
             }
         }
@@ -118,7 +122,7 @@
 
             .ksstn-info,
             .ksstn-info-right,
-            .ksstn-info-location {
+            .ksstn-info-web {
                 font-size: 3vw;
                 top: calc(56% + 10vw);
             }
@@ -131,7 +135,7 @@
                 left: calc(50% + 10vw);
             }
 
-            .ksstn-info-location {
+            .ksstn-info-web {
                 left: calc(50% + 23vw);
             }
         }
@@ -230,13 +234,10 @@
                         <a class="nav-link" href="#">Works</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">CV</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -250,14 +251,14 @@
 
     <!-- Info Texts -->
     <div class="ksstn-info">
-        Portfolio
+        Designer
     </div>
     <div class="ksstn-info-right">
         <span>creator</span>
         <span>creator</span>
     </div>
-    <div class="ksstn-info-location">
-        Malvar<br>Philippines
+    <div class="ksstn-info-web">
+        Web<br>Developer
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
