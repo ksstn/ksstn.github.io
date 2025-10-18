@@ -22,7 +22,13 @@ body {
 .navbar .navbar-brand,
 .navbar .nav-link {
     color: #ffffff !important;
+    font-family: Poppins, sans-serif;
+    font-weight: 420;
 }
+.navbar-nav .nav-link:hover {
+        color: rgb(179, 0, 0) !important;
+    }
+
 .navbar-toggler{
     border-color: rgba(255,255,255,0.2);
 }
@@ -193,7 +199,7 @@ body {
   margin: auto;
 }
 .feature-img-wrapper img {
-  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.2s, opacity 0.5s;
 }
 .feature-img-wrapper:hover img {
   transform: scale(1.1);
@@ -227,7 +233,9 @@ body {
   text-decoration: none;
 }
 
-
+.contact-section {
+ background-color: #262525;
+}
 
 @media (max-width: 992px) {
     .hero{
