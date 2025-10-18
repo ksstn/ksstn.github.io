@@ -1,242 +1,149 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Audiowide Google Font -->
+    <title>Ksstn | Home</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            background: url('bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            min-height: 100vh;
-            opacity: 0;
-            filter: blur(10px);
-            transform: translateY(50px);
-            transition: opacity 1s ease-out, filter 1s ease-out, transform 1s ease-out;
-        }
-
-        .ksstn-title {
-            position: fixed;
-            top: 56%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Audiowide', sans-serif;
-            font-size: 14vw;
-            color: #fff;
-            text-align: center;
-            white-space: nowrap;
-            margin: 0;
-            pointer-events: none;
-            user-select: none;
-            z-index: 2;
-        }
-
-        .person-foreground {
-            position: fixed;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90vw;
-            height: 119vh;
-            object-fit: cover;
-            z-index: 1;
-            pointer-events: none;
-            user-select: none;
-        }
-
-        /* Responsive info positions relative to KSSTN */
-        .ksstn-info {
-            position: fixed;
-            top: calc(56% + 5.5vw);
-            left: calc(50% - 26.7vw);
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.4vw;
-            color: #fff;
-            z-index: 3;
-            white-space: nowrap;
-        }
-
-        .ksstn-info-right {
-            position: fixed;
-            top: calc(56% + 5.5vw);
-            left: calc(50% + 16.5vw);
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.4vw;
-            color: #fff;
-            z-index: 3;
-            line-height: 1.1;
-            white-space: nowrap;
-        }
-
-        .ksstn-info-right span {
-            display: block;
-        }
-
-        .ksstn-info-web {
-            position: fixed;
-            top: calc(56% + 5.5vw);
-            left: calc(50% + 25vw);
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.4vw;
-            color: #fff;
-            z-index: 3;
-            line-height: 1.1;
-            white-space: nowrap;
-        }
-        
-.navbar {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-}
-
-.navbar-brand img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 8px;
-}
-
-.navbar .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  margin: 0 8px;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  color: #ff8c8c !important;
-}
-        @media (max-width: 900px) {
-            .ksstn-title {
-                font-size: 18vw;
-            }
-
-            .ksstn-info,
-            .ksstn-info-right,
-            .ksstn-info-web {
-                font-size: 2.5vw;
-                top: calc(56% + 10vw);
-            }
-
-            .ksstn-info {
-                left: calc(50% - 38vw);
-            }
-
-            .ksstn-info-right {
-                left: calc(50% + 10vw);
-            }
-
-            .ksstn-info-web {
-                left: calc(50% + 23vw);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .ksstn-title {
-                font-size: 16vw;
-            }
-
-            .ksstn-info,
-            .ksstn-info-right,
-            .ksstn-info-web {
-                font-size: 3vw;
-                top: calc(56% + 10vw);
-            }
-
-            .ksstn-info {
-                left: calc(50% - 30vw);
-            }
-
-            .ksstn-info-right {
-                left: calc(50% + 10vw);
-            }
-
-            .ksstn-info-web {
-                left: calc(50% + 23vw);
-            }
-        }
-
-       
-
-        .ksstn-shine {
-            background: linear-gradient(120deg, #fff 30%, #9c030398 50%, #fff 70%);
-            background-size: 200% 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: shine-text 6s linear infinite;
-        }
-
-        @keyframes shine-text {
-            0% {
-                background-position: 200% 0;
-            }
-
-            100% {
-                background-position: -200% 0;
-            }
-        }
-    </style>
+        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">KSSTN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div class="container-fluid p-0">
+        <div class="hero">
+        <div class="container h-100 d-flex justify-content-center">
+            <div class="hero-content text-center w-100">
+                <div class="banner-title" data-text="KSSTN">KSSTN</div>
+                <a class="btn hero-btn btn-m rounded-pill px-4 fw-bold" href="#contact">Contact me</a>
+            </div>
+        </div>
+    </div>
+ </div>
 
-    <!-- Foreground Person Image -->
-    <img src="picture.png" alt="Person Foreground" class="person-foreground">
+ <!-- about section -->
+ <section class="about-section" id="about">
+    <div class="container position-relative">
+      <div class="row align-items-center justify-content-center glass-container p-5">
+        <div class="col-lg-7 col-md-12 about-text text-lg-start text-center">
+          <h3>ABOUT ME</h3>
+          <h1>KRISTINE ANN MAGLINAO</h1>
+          <h4>I’m an IT Student</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-8 col-sm-10 p-2 text-center mt-4 mb-3 ms-4 mt-lg-0 about-image">
+          <img src="Ellipse.png" alt="Kristine Ann Maglinao" class="img-fluid shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
 
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="logo.png" alt="Logo">
-      <span class="fw-bold text-white">KSSTN</span>
-    </a>
-
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+   <!-- service section -->
+<section class="services-section py-8 p-5 pb-5">
+  <div class="container text-center text-white px-1">
+    <h2 class="mb-5 fw-bold py-3">BEST SERVICES</h2>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <i class="bi bi-code-slash fs-1 mb-2"></i>
+        <h5 class="fw-bold">Lorem Ipsum</h5>
+        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipis</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-lightbulb fs-1 mb-2"></i>
+        <h5 class="fw-bold">Lorem Ipsum</h5>
+        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipis</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-plus-lg fs-1 mb-2"></i>
+        <h5 class="fw-bold">Lorem Ipsum</h5>
+        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipis</p>
+      </div>
     </div>
   </div>
-</nav>
+</section>
 
-    <!-- KSSTN Title -->
-    <div class="ksstn-title">
-        KSSTN
+  <!-- featured project section -->
+<section class="feature-project-section text-center text-white py-4 mt-5">
+  <div class="container">
+    <h2 class="fw-bold mb-5 mt-3">FEATURED PROJECTS</h2>
+    <div id="featureProjectCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#" class="feature-link">
+            <div class="feature-img-wrapper ">
+              <img src="project1.jpg" class="d-block w-100" alt="Project 1">
+              <div class="feature-overlay"><h5>Project Title 1</h5><p>Brief description of Project 1.</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" class="feature-link">
+            <div class="feature-img-wrapper">
+              <img src="project2.jpg" class="d-block w-100" alt="Project 2">
+              <div class="feature-overlay"><h5>Project Title 2</h5><p>Brief description of Project 2.</p></div>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#" class="feature-link">
+            <div class="feature-img-wrapper">
+              <img src="project3.jpg" class="d-block w-100" alt="Project 3">
+              <div class="feature-overlay"><h5>Project Title 3</h5><p>Brief description of Project 3.</p></div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="ksstn-info">
-        Designer
-    </div>
-    <div class="ksstn-info-right">
-        <span>creator</span>
-        <span>creator</span>
-    </div>
-    <div class="ksstn-info-web">
-        Web<br>Developer
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
+
