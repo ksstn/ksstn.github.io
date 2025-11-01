@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-2">
+        <img src="logo.png" alt="KSSTN Logo" width="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-2" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CV.html">CV</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <div class="container-fluid p-0">
+    <div class="hero">
+      <div class="container h-100 d-flex justify-content-center">
+        <div class="hero-content text-center w-100">
+          <div class="banner-title" data-text="MY WORKS">MY WORKS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- web development section -->
+  <section class="web-section">
+    <div class="container my-5">
+      <h2>WEB DEVELOPMENT</h2>
+      <div id="webCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 align-items-center ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project1.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">THE SCREAM</h3>
+                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VISIT SITE</a>
+              </div>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 align-items-center  ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project2.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">PORTFOLIO REDUX</h3>
+                <p class="project-desc">A responsive portfolio built for accessibility and speed.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VISIT SITE</a>
+              </div>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-4 align-items-center ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project3.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">E COMMERCE DEMO</h3>
+                <p class="project-desc">Mock shop layout with filtering and a responsive grid.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VISIT SITE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- controls -->
+        <button class="carousel-control-prev justify-content-start me-5" type="button" data-bs-target="#webCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next justify-content-end ms-5" type="button" data-bs-target="#webCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- graphic design section -->
+  <section class="graphic-section py-5">
+    <div class="container text-center my-5">
+      <h2 class="graphic-title fw-bold mb-4">
+        GRAPHIC DESIGN
+      </h2>
+    </div>
+
+    <div id="designCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4 my-2">
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 1</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 2</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 3</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4 my-2">
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 4</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 5</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+
+            <div class="col-10 col-md-3 text-center">
+              <div class="design-img">
+                <img src="project2.jpg" class="img-fit">
+              </div>
+              <h6 class="design-label mt-3 fw-bold">THE SCREAM 6</h6>
+              <a href="#" class="btn btn-outline-danger btn-sm text-white">tap to expand</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- controls -->
+      <button class="carousel-control-prev ms-5" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next me-5" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- app development section -->
+  <section class="app-section">
+    <div class="container my-5">
+      <h2>APP DEVELOPMENT</h2>
+      <div id="appCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 align-items-center ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project1.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">APP CONCEPT ONE</h3>
+                <p class="project-desc">Prototype interface showing clean navigation and smooth flow.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VIEW APP</a>
+              </div>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 align-items-center ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project2.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">APP REDESIGN</h3>
+                <p class="project-desc">Modern interface with improved usability and lighter visuals.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VIEW APP</a>
+              </div>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-4 align-items-center ms-5 me-5">
+              <div class="col-md-6">
+                <div class="carousel-image" style="background-image:url('project3.jpg')"></div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="project-title">APP DEMO UI</h3>
+                <p class="project-desc">Sample layout showing app screens for testing and preview.</p>
+                <a href="#" class="btn btn-outline-danger text-white">VIEW APP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- controls -->
+        <button class="carousel-control-prev me-5" type="button" data-bs-target="#appCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next ms-5" type="button" data-bs-target="#appCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="contact-section py-8 p-5 pb-5">
+    <div class="container text-center text-white px-1">
+      <div class="row gy-4">
+        <div class="Logo-end p-2 col-md-3">
+          <a> <img src="logo.png" alt="KSSTN Logo" width="60" height="60" class="mb-1">KSSTN </a>
+        </div>
+        <div class="contact col-md-3">
+          <hr class="w-100 clearfix d-md-none">
+          <h5 class="fw-bold">WEBSITES</h5>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+        </div>
+        <div class="contact col-md-3">
+          <hr class="w-100 clearfix d-md-none">
+          <h5 class="fw-bold">BRANDS</h5>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+          <p>
+            <a class="info text-white"> Lorem </a>
+          </p>
+        </div>
+        <hr class="w-100 clearfix d-md-none">
+        <div class="contact col-md-3">
+          <h5 class="fw-bold">CONTACTS</h5>
+          <p class=" info text-white">
+            <i class="bi bi-envelope-fill me-2"> <a>kristineannmaglinao@gmail.com</a>
+            </i>
+          </p>
+          <p class=" info text-white">
+            <i class="bi bi-telephone-fill me-2"> <a>+639 26 708 4699</a>
+            </i>
+          </p>
+          <p class=" info text-white">
+            <i class="bi bi-geo-alt-fill me-2"> <a> Batangas, Philippines</a>
+            </i>
+          </p>
+        </div>
+      </div>
+      <section class="p-3 pt-0">
+        <hr class="mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+
+          <div class="p-3">
+            <p class="mb-0 text-start">
+              &copy; 2025 Copyright: <a class="text-white text-decoration-none"
+                href="https://github.com/ksstn">ksstn.github.io</a>
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-md btn-outline-secondary rounded-circle m-1" role="button" href="https://github.com"
+              aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a class="btn btn-md btn-outline-secondary rounded-circle m-1" role="button" href="https://instagram.com"
+              aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="btn btn-md btn-outline-secondary rounded-circle m-1" role="button" href="https://twitter.com"
+              aria-label="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a class="btn btn-md btn-outline-secondary rounded-circle m-1" role="button" href="https://facebook.com"
+              aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
